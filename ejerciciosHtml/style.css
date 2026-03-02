@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "kanit";
+    src: url('fonts/Kanit-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "raleway";
+    src: url('fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "spinnaker";
+    src: url('fonts/Spinnaker-Regular.ttf') format('truetype');
+}
+
+body{
+    font-family: "kanit", sans-serif;
+    background-color: black;
+}
+
+:root{
+    --color-principal-verde: #4CAF50;
+    --color-principal-naranaja: #ff3c00;
+
+    --fondo-secciones-claro: #efece3;
+
+    --fuente-titulos: 'Lora', serif;
+    --tamano-titulos-1: 35px;
+
+    --tamano-margenes-bloques: 100px;
+
+    --borde-redondeado: 10px;
+    --borde-grosor: 3px;
+    --borde-color: var(--color-principal-naranaja);
+    --padding-botones: 10px;
+}
+
+.botones-cabecera a{
+    border: var(--borde-grosor) solid var(--borde-color);
+    text-decoration: none;
+    border-radius: var(--borde-redondeado);
+
+    padding: var(--padding-boton);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+header, li{
+    margin: 20px;
+    padding: 35px;
+    border: 1px solid black;
+}
+
+los puntos especifican clases
+header .texto-blanco{
+    background-color: chartreuse;
+}
+
+.texto-blanco,.texto-blanco a{
+    color: white;
+    font-size: 30px;
+}
+*/
