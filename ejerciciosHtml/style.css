@@ -21,12 +21,12 @@
 
 body{
     font-family: "kanit", sans-serif;
-    background-color: black;
+    background-color: hwb(105 66% 20%);
 }
 
 :root{
     --color-principal-verde: #4CAF50;
-    --color-principal-naranaja: #ff3c00;
+    --color-principal-naranaja: #404a939d;
 
     --fondo-secciones-claro: #efece3;
 
