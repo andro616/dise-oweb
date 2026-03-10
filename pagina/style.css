@@ -11,12 +11,14 @@
     --color-fondo-principal: #e6dcdc;
     --color-texto-principal: #723939;
     --color-detalle-verde: #4CAF50;
-    --color-btn-naranja: #FF5722;
+    --color-btn-naranja: #f78c6c;
     
     --fuente-titulos: "Montserrat";
     --feuntes-parrafos: "Playlist Script";
 
     --sombra-botones-clara: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+    --margen-interna-secciones: 50px;
 }
 
 header{
@@ -116,4 +118,175 @@ nav ul li a{
 .capa-textos{
     z-index: 1;
     
+}
+
+.rollos{
+    background-color: var(--color-texto-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--margen-interna-secciones);
+    color: var(--color-fondo-principal);
+    gap: 20px;
+}
+
+.rollos-contenido{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.rollos-descripcion{
+    flex: 1;
+    width: 100%;
+
+    h2{
+        font-family: var(--fuente-titulos);
+        font-size: 4rem;
+        line-height: 50px;
+    }
+
+     h3{
+        font-family: var(--fuente-titulos);
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: var(--color-detalle-verde);
+        background-color: var(--color-fondo-principal);
+        padding: 10px 30px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+.rollos-productos{
+    flex: 2;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.rollo-producto{
+    border: 1px solid var(--color-btn-naranja);
+    border-radius: 10px;
+    background-color: var(--color-btn-naranja);
+}
+
+
+
+.rollos-productos img{
+    width: 200px;
+}
+
+
+.rollo-producto{
+    padding: 20px;
+    font-family: var(--feuntes-parrafos);
+
+    h2{
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: var(--fuente-titulos);
+    }
+    h3{
+        font-size: 1.2rem;
+        font-family: var(--fuente-titulos);
+    }
+    ul{
+        margin: 15px 0px;
+        margin-left: 20px;
+    }
+    .precio{
+        font-size: 1.5rem;
+    }
+
+    .precio a{
+        text-decoration: none;
+        color: var(--color-detalle-verde);
+        background-color: var(--color-fondo-principal);
+        padding: 10px 30px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+.estilos-boton{
+    text-decoration: none;
+    color: var(--color-detalle-verde);
+    background-color: var(--color-fondo-principal);
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.rollos-ingredientes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+
+    .rollo-ingrediente{
+        background-color: var(--color-detalle-verde);
+        box-shadow: rgba(135, 131, 131, 0.1) 0px 4px 12px inset, rgba(0, 0, 0, 0.06) 0px 0px 0px inset;
+        padding: 15px;
+        border-radius: 0px 10px 0px 10px;
+    }
+}
+
+
+.menu-dia{
+    background-color: var(--color-fondo-principal);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: var(--margen-interna-secciones);
+    text-align: center;
+
+
+    h2{
+        font-family: var(--fuente-titulos);
+        font-size: 3rem;
+    }
+
+    .menu-items{
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .opcion-almuerzo{
+        box-shadow: var(--sombra-botones-clara);
+        padding: 20px;
+        border-radius: 20px;
+        text-align: left;
+        width: 230px;
+
+        img{
+            border-radius: 10px;
+            width: 200px;
+            height: 150px;
+        }
+        ul{
+            margin-left: 20px;
+
+        }
+    }
+
+    a{
+        background-color: var(--color-texto-principal);
+        color: var(--color-fondo-principal);
+    }
 }
