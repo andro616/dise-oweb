@@ -6,11 +6,12 @@
 
 body {
     margin: 0%;
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #ecf0f3;
+    padding: 10px;
 }
 
 h1 {
@@ -25,10 +26,11 @@ h1 {
 
 .contenedor {
     width: 400px;
-    height: 700px;
-    border-radius: 60px;
-    box-shadow: 19px 19px 38px #acafb1,
-        -19px -19px 38px #ffffff;
+    height: 800px;
+    border-radius: 45px;
+    background: linear-gradient(145deg, #fdffff, #d4d8db);
+    box-shadow: 32px 32px 64px #9c9ea0,
+        -32px -32px 64px #ffffff;
 }
 
 
@@ -41,37 +43,91 @@ h1 {
 }
 
 .formulario {
-    margin-top: 55px;
+    margin-top: 20px;
 }
 
 .campo {
-    border-radius: 26px;
-    background: #ecf0f3;
-    box-shadow: inset 8px 8px 16px #b8bbbe,
-        inset -8px -8px 16px #ffffff;
+    width: 300px;
+    margin: 5px;
+    margin-left: 50px;
+    padding: 5px;
+
+    label {
+        font-weight: 300;
+
+    }
+
+    select {
+        width: 100%;
+        height: 50px;
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 14px;
+        color: #000000;
+        display: flex;
+        margin: 10px;
+        border-radius: 26px;
+        background: #ecf0f3;
+        box-shadow: inset 8px 8px 16px #b8bbbe,
+            inset -8px -8px 16px #ffffff;
+
+    }
+
+
+
+
+    input {
+        width: 100%;
+        height: 20px;
+        border: none;
+        padding: 19px;
+        outline: none;
+        background: none;
+        font-size: 14px;
+        display: flex;
+        margin: 10px;
+        border-radius: 26px;
+        background: #ecf0f3;
+        box-shadow: inset 8px 8px 16px #b8bbbe,
+            inset -8px -8px 16px #ffffff;
+
+
+    }
 }
 
-input {
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 14px;
-    display: flex;
-    margin: 20px;
-}
+
 
 button {
+    display: flex;
     outline: none;
-    margin-top: 20px;
+    margin-top: 10px;
     border: none;
     cursor: pointer;
-    width: 100%;
-    height: 50px;
+    width: 200px;
+    height: 40px;
     font-size: 20px;
     font-weight: 700;
     border-radius: 25px;
     background: #ecf0f3;
-    box-shadow: 9px 9px 18px #c4c7ca,
+    box-shadow: 9px 9px 18px #828486,
         -9px -9px 18px #ffffff;
+    justify-content: center;
+    margin-left: 100px;
+}
 
+.resultado {
+    text-align: center;
+    color: #555;
+}
+
+
+button:active {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    background-color: silver;
+    transition: all ease-in 100ms;
+}
+
+button:hover {
+    transform: translateY(-2px);
 }
