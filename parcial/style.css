@@ -1,5 +1,77 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
     box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    color: #555;
+}
+
+body {
+    margin: 0%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ecf0f3;
+}
+
+h1 {
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 750;
+    letter-spacing: 0.5;
+    padding-top: 25px;
+    margin-left: 20px;
+}
+
+
+.contenedor {
+    width: 400px;
+    height: 700px;
+    border-radius: 60px;
+    box-shadow: 19px 19px 38px #acafb1,
+        -19px -19px 38px #ffffff;
+}
+
+
+
+.subtitulo {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 7px;
+    letter-spacing: 2px;
+}
+
+.formulario {
+    margin-top: 55px;
+}
+
+.campo {
+    border-radius: 26px;
+    background: #ecf0f3;
+    box-shadow: inset 8px 8px 16px #b8bbbe,
+        inset -8px -8px 16px #ffffff;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 14px;
+    display: flex;
+    margin: 20px;
+}
+
+button {
+    outline: none;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 25px;
+    background: #ecf0f3;
+    box-shadow: 9px 9px 18px #c4c7ca,
+        -9px -9px 18px #ffffff;
+
 }
