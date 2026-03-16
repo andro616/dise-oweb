@@ -1,4 +1,4 @@
-
+/** Andres David Piamba Quiroz */
 document.getElementById('btnCalcular').addEventListener('click', calcular);
 
 function calcular() {
