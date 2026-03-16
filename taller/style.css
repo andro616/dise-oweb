@@ -10,8 +10,8 @@
 :root{
     --color-fondo-principal: #e6dcdc;
     --color-texto-principal: #723939;
-    --color-detalle-verde: #4CAF50;
-    --color-btn-naranja: #f78c6c;
+    --color-detalle-verde: #b2e2b3;
+    --color-btn-naranja: #8e6457;
     
     --fuente-titulos: "Montserrat";
     --feuntes-parrafos: "Playlist Script";
@@ -30,7 +30,7 @@ header{
     padding: 10px 30px;
 }
 
-.logo img{
+.imagen-logo img{
     height: 50px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border-radius: 5px;
@@ -51,23 +51,19 @@ nav ul li a{
     text-decoration: none;
     color: var(--color-texto-principal);
     font-family: var(--fuente-titulos);
-    font-weight: 600;
+    font-weight: 800;
 }
 
-
-.boton-pedir a{
+.boton-usuarios a{
     text-decoration: none;
-    background-color: bisque;
-    width: 200px;
-    height: 40px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: var(--color-btn-naranja);
     color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: var(--sombra-botones-clara);
     font-family: var(--fuente-titulos);
     font-weight: 600;
 }
-
 
 .hero{
     height: calc(100vh - 100px);
@@ -102,25 +98,12 @@ nav ul li a{
         border-radius: 5px;
         box-shadow: var(--sombra-botones-clara);
     }
-    .hero-botones{
+    .boton-hero{
         margin-top: 20px;
     }
 }
 
-
-.capa-oscura{
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 0, 0, 0.5);
-    position: absolute;
-}
-
-.capa-textos{
-    z-index: 1;
-    
-}
-
-.rollos{
+.comida{
     background-color: var(--color-texto-principal);
     display: flex;
     flex-direction: column;
@@ -131,7 +114,7 @@ nav ul li a{
     gap: 20px;
 }
 
-.rollos-contenido{
+.contenido-comida{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -139,8 +122,8 @@ nav ul li a{
     width: 100%;
 }
 
-.rollos-descripcion{
-    flex: 1;
+.descrip-comida{
+    flex: 2;
     width: 100%;
 
     h2{
@@ -158,14 +141,14 @@ nav ul li a{
         text-decoration: none;
         color: var(--color-detalle-verde);
         background-color: var(--color-fondo-principal);
-        padding: 10px 30px;
+        padding: 1px 50px;
         border-radius: 10px;
         text-align: center;
-        font-size: 1rem;
+        font-size: 2rem;
     }
 }
 
-.rollos-productos{
+.producto-comida{
     flex: 2;
     display: flex;
     width: 100%;
@@ -176,20 +159,13 @@ nav ul li a{
     gap: 20px;
 }
 
-.rollo-producto{
+.productos-comidas{
     border: 1px solid var(--color-btn-naranja);
     border-radius: 10px;
     background-color: var(--color-btn-naranja);
 }
 
-
-
-.rollos-productos img{
-    width: 200px;
-}
-
-
-.rollo-producto{
+.productos-comidas{
     padding: 20px;
     font-family: var(--feuntes-parrafos);
 
@@ -221,24 +197,16 @@ nav ul li a{
     }
 }
 
-.estilos-boton{
-    text-decoration: none;
-    color: var(--color-detalle-verde);
-    background-color: var(--color-fondo-principal);
-    padding: 10px 30px;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 1rem;
-}
 
-.rollos-ingredientes{
+
+.com-des{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
     gap: 20px;
 
-    .rollo-ingrediente{
+    .com-de{
         background-color: var(--color-detalle-verde);
         box-shadow: rgba(135, 131, 131, 0.1) 0px 4px 12px inset, rgba(0, 0, 0, 0.06) 0px 0px 0px inset;
         padding: 15px;
@@ -246,6 +214,15 @@ nav ul li a{
     }
 }
 
+.boton-usuario{
+    text-decoration: none;
+    color: var(--color-detalle-verde);
+    background-color: var(--color-fondo-principal);
+    padding: 10px 500px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
 
 .menu-dia{
     background-color: var(--color-fondo-principal);
@@ -255,9 +232,6 @@ nav ul li a{
     padding: var(--margen-interna-secciones);
     text-align: center;
     
-   
-
-
     h2{
         font-family: var(--fuente-titulos);
         font-size: 3rem;
@@ -270,7 +244,7 @@ nav ul li a{
         justify-content: center;
     }
 
-    .opcion-almuerzo{
+    .menu-item{
         box-shadow: var(--sombra-botones-clara);
         padding: 20px;
         border-radius: 20px;
@@ -293,3 +267,4 @@ nav ul li a{
         color: var(--color-fondo-principal);
     }
 }
+
